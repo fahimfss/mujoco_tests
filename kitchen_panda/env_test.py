@@ -26,6 +26,8 @@ def create_vid(context, video):
     video.write(image)
 
 def init_mj_render(model):
+    ## Rendering code is from: https://github.com/tayalmanan28/MuJoCo-Tutorial
+    
     glfw.init()
     window = glfw.create_window(WIDTH, HEIGHT, "test", None, None)
     glfw.make_context_current(window)
